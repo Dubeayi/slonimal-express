@@ -25,7 +25,10 @@ const sloSeed = [
 ];
 
 sloSeed.forEach((el) => {
-  db.query(`INSERT INTO slonimals (animal, speed_mm_per_s) VALUES ('${el.animal}', ${el.speed})`);
+  db.query(`INSERT INTO slonimals (animal, speed_mm_per_s) VALUES ("${el.animal}", ${el.speed})`);
 });
 
+
 db.end();
+// module.exports = sloSeed;
+
